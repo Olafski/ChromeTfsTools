@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Chrome TFS Online tools",
+  "description": "Adds functionality to Team Foundation Server online.",
+  "version": "1.0",
+  "author": "Olaf Keijsers",
+
+  "content_scripts": [
+    {
+      "matches" : ["http://*/*", "https://*/*"],
+      "js": [ "jquery-2.1.4.min.js", "tfsTools.js" ]
+    }
+  ]
+}
